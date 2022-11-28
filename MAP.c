@@ -4,8 +4,9 @@
 int prim(int n)
 {
    int d;
-   for(d = 2; d <= n / 2; d++)
-       if(n % d == 0)
+   for(d = 2; d <= n / 2; d++)//0 si 1 nu sunt numere prime, aflam daca are divizori proprii
+                               // instructiunea merge pana la n/2 pentru ca nu exista divizori proprii intre n/2 si n
+       if(n % d == 0) //conditie ca d sa fie divizor propriu al lui n
           return 0;
           return 1;//exista o eroare
 }
@@ -14,10 +15,10 @@ int main()
 {
    int n = 22;
    int m, k;
-     for(m = 2; m <= n ; m++)
+     for(m = 2; m <= n ; m++)//parcurgem toate numerele pana la n
         for(k = 1; k <= m; k++)
-           if(prim(k) && prim(m - k) && k <= m - k )
-           printf("%d = %d + %d\n", m , k, m - k);
+           if(prim(k) && prim(m - k) && k <= m - k ) //verificare daca k si m - k sunt numere prime si k<=m-k pentru aflarea acestora plus o conditie de afisare
+           printf("%d = %d + %d\n", m , k, m - k); //afisarea rezultatului
            
     return 0;
 }
