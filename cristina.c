@@ -1,5 +1,6 @@
 //prin acest program avem ca scop aflarea sumei a doua numere prime pana la un numar n dat de la tastatura
 #include <stdio.h>
+
 //functie pentru verificarea numerelor daca sunt prime
 int prim(int n) //functie pentru a verifica daca numarul este prim
 {
