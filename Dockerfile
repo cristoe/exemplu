@@ -1,5 +1,5 @@
 FROM gcc:latest
 WORKDIR /usr/src/folder
-COPY cristina.c .
-RUN gcc -o cristina cristina.c -lstdc++
-CMD ["./cristina"]
+COPY MAP.c .
+RUN gcc -o MAP MAP.c -lstdc++
+CMD ["./MAP"]
