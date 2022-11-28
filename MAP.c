@@ -17,7 +17,8 @@ int main()
    int m, k;
      for(m = 2; m <= n ; m++)//parcurgem toate numerele pana la n
         for(k = 1; k <= m; k++)
-           if(prim(k) && prim(m - k) && k <= m - k ) //verificare daca k si m - k sunt numere prime si k<=m-k pentru aflarea acestora plus o conditie de afisare
+           if(prim(k) && prim(m - k) && k <= m - k ) //verificare daca k si m - k sunt numere prime si k<=m-k 
+                                                    //pentru aflarea acestora plus o conditie de afisare
            printf("%d = %d + %d\n", m , k, m - k); //afisarea rezultatului
            
     return 0;
