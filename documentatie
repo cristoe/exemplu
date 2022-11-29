@@ -8,16 +8,35 @@ exact în două moduri ca sumă de numere prime. Ex.: 14 = 1 + 13 și 14 = 7 + 7
         Aplicatiile folosite pentru a realiza acest proiect au fost: Docker, Visual Studio Code cu terminalul inclus, Github.
     
     Docker este o platformă de containere software destinată dezvoltării, expedierii și rulării aplicațiilor care utilizează tehnologia containerelor.
-    Un container Docker este un format standard în care sunt împachetate toate codurile și dependențele unei aplicații, pentru rularea rapidă și fiabilă a acesteia în mai multe medii de calcul. Un container Docker este un container popular cu dimensiuni mici, de sine stătător, executabil, care include tot ce este necesar pentru a rula o aplicație, inclusiv biblioteci, instrumente de sistem, coduri și timp de rulare.
-    Docker este, de asemenea, o platformă software care le permite dezvoltatorilor să construiască, să testeze și să implementeze rapid aplicații containerizate.
+    Un container Docker este un format standard în care sunt împachetate toate codurile și dependențele unei aplicații, 
+    pentru rularea rapidă și fiabilă a acesteia în mai multe medii de calcul. 
+    Un container Docker este un container popular cu dimensiuni mici, de sine stătător, executabil, 
+    care include tot ce este necesar pentru a rula o aplicație, inclusiv biblioteci, instrumente de sistem, coduri și timp de rulare.
+    Docker este, de asemenea, o platformă software care le permite dezvoltatorilor să construiască, 
+    să testeze și să implementeze rapid aplicații containerizate.
 
-    Visual Studio Code este un editor de cod sursă ușor, dar puternic, care rulează pe desktop și este disponibil pentru Windows, macOS și Linux. Acesta vine cu asistență încorporată pentru JavaScript, TypeScript și Node.js și are un ecosistem bogat de extensii pentru alte limbi (cum ar fi C+, C#, Java, Python, PHP și Go) și runtimes (cum ar fi .NET și Unity). Visual Studio Code permite să vă extindeți capacitatea prin extensii. Extensiile de VS Code pot adăuga mai multe caracteristici experienței generale. Visual Studio Code se paote conecta cu GIthub.
+    Visual Studio Code este un editor de cod sursă ușor, dar puternic, care rulează pe desktop și este disponibil pentru
+     Windows, macOS și Linux. Acesta vine cu asistență încorporată pentru JavaScript, 
+     TypeScript și Node.js și are un ecosistem bogat de extensii pentru alte limbi (cum ar fi C+, C#, Java, Python, PHP și Go) și runtimes 
+     (cum ar fi .NET și Unity). Visual Studio Code permite să vă extindeți capacitatea prin extensii. 
+     Extensiile de VS Code pot adăuga mai multe caracteristici experienței generale. Visual Studio Code se paote conecta cu GIthub.
 
-    GitHub este din ce in ce mai utilizat si cerut de toti angajatorii, fiind un software care te ajuta la versionarea codului tau. De exemplu, daca vrei sa construiesti pe baza a ceea ce ai lucrat pana acum sau sa aduci si alte persoane care sa contribuie la munca ta, nu poti tine codul pe calculatorul tau pentru ca va deveni dificil ca si altii sa acceseze si sa lucreze cu ceea ce tu ai facut pana la momentul respectiv.Multi programatori folosesc GitHub pentru a-si stoca ceea ce au codat si a-si crea un portofoliu pe care angajatorii il pot oricand vizualiza. 
+    GitHub este din ce in ce mai utilizat si cerut de toti angajatorii, 
+    fiind un software care te ajuta la versionarea codului tau. 
+    De exemplu, daca vrei sa construiesti pe baza a ceea ce ai lucrat pana acum sau sa aduci si 
+    alte persoane care sa contribuie la munca ta, nu poti tine codul pe calculatorul tau 
+    pentru ca va deveni dificil ca si altii sa acceseze si sa lucreze cu ceea ce tu ai facut pana la momentul respectiv.Multi programatori folosesc GitHub pentru a-si stoca ceea ce au codat si a-si crea un portofoliu pe care angajatorii il pot oricand vizualiza. 
 
-    Pentru a realiza acest program am folosit C, am folosit o functie pentru a verifica daca numerele sunt prime prin parcurgerea unui for care incepe de la 2(pentru ca 0 si 1 nu sunt numere prime) pana la n/2 deoarece nu exista divizori proprii intre n/2 si n, iar apoi aflam daca numerele au divizori proprii. In functia main parcurgem doua for-uri pentru a genera numerele de verificat pana la numarul n dat de la tastatura, iar apoi pritr-un if folosim functia de verificare a numerelor prime pentru variabila k de tipul int si pentru m-k(pentru a fla daca cel mai mare divizor comun dintre ele este 1) si avem o conditie de afisare pentru a nu se repeta aceleasi numere. Apoi vom afisa totul ca suma de doua numere printr-un printf.
+    Pentru a realiza acest program am folosit C, am folosit o functie pentru a verifica daca numerele sunt 
+    prime prin parcurgerea unui for care incepe de la 2(pentru ca 0 si 1 nu sunt numere prime) pana la n/2 
+    deoarece nu exista divizori proprii intre n/2 si n, iar apoi aflam daca numerele au divizori proprii.
+     In functia main parcurgem doua for-uri pentru a genera numerele de verificat pana la numarul n dat de la tastatura, 
+     iar apoi pritr-un if folosim functia de verificare a numerelor prime pentru variabila k de tipul int si pentru 
+     m-k(pentru a fla daca cel mai mare divizor comun dintre ele este 1) si avem o conditie de afisare 
+     pentru a nu se repeta aceleasi numere. Apoi vom afisa totul ca suma de doua numere printr-un printf.
 
-    Pentru exemplu de rulare am folosit numarul 22, initializat prin n = 22(n fiind numarul pana la care se afiseaza). Iar daca nu exista numere prime pana la numarul n dat de la tastatura se va afisa un mesaj.
+    Pentru exemplu de rulare am folosit numarul 22, initializat prin n = 22(n fiind numarul pana la care se afiseaza). 
+    Iar daca nu exista numere prime pana la numarul n dat de la tastatura se va afisa un mesaj.
     Numerele prime generate pana la 22 sunt:
 2 = 1 + 1
 3 = 1 + 2
