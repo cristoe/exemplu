@@ -8,7 +8,7 @@ int prim(int n)
                                // instructiunea merge pana la n/2 pentru ca nu exista divizori proprii intre n/2 si n
        if(n % d == 0) //conditie ca d sa fie divizor propriu al lui n
           return 0;
-          return 1;//exista o eroare
+          return 1;
 }
 
 int main()
@@ -20,6 +20,8 @@ int main()
            if(prim(k) && prim(m - k) && k <= m - k ) //verificare daca k si m - k sunt numere prime si k<=m-k 
                                                     //pentru aflarea acestora plus o conditie de afisare
            printf("%d = %d + %d\n", m , k, m - k); //afisarea rezultatului
+           else
+           printf("Nu exista numere prime pana la %d", n);
            
     return 0;
 }
